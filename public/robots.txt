@@ -1,0 +1,15 @@
+# robots.txt for Yann Simon Portfolio
+# https://yannsimon.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yannsimon.com/sitemap.xml
+
+# Disallow crawling of old archived files
+Disallow: /old/
+
+# Allow all images
+Allow: /images/
+Allow: /favicon/
