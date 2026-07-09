@@ -1,784 +1,899 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio complet de Yann Simon - Plus de 15 projets en développement web, R&D et design. Sites pour avocats, e-commerce, systèmes industriels et créations artistiques.">
-    <meta name="keywords" content="portfolio développeur web, projets R&D, design UX/UI, sites web avocats, Three.js, LabVIEW, Nantes">
-    <meta name="author" content="Yann Simon">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio complet de Yann Simon - Plus de 15 projets en développement web, R&D et design. Sites pour avocats, e-commerce, systèmes industriels et créations artistiques."
+    />
+    <meta
+      name="keywords"
+      content="portfolio développeur web, projets R&D, design UX/UI, sites web avocats, Three.js, LabVIEW, Nantes"
+    />
+    <meta name="author" content="Yann Simon" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Portfolio Complet - Yann Simon">
-    <meta property="og:description" content="Plus de 15 projets en développement web, R&D et design. De Hermès aux systèmes industriels.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yannsimon.com/projets.html">
-    
+    <meta property="og:title" content="Portfolio Complet - Yann Simon" />
+    <meta
+      property="og:description"
+      content="Plus de 15 projets en développement web, R&D et design. De Hermès aux systèmes industriels."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yannsimon.com/projets.html" />
+
     <title>Tous mes projets - Yann Simon | Portfolio Complet</title>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo-yann-simon.svg" alt="Yann Simon" class="nav-logo-img">
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html#about" class="nav-link">À propos</a></li>
-                <li><a href="index.html#skills" class="nav-link">Compétences</a></li>
-                <li><a href="index.html#experience" class="nav-link">Expérience</a></li>
-                <li><a href="projets.html" class="nav-link">Projets</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="logo-yann-simon.svg" alt="Yann Simon" class="nav-logo-img" />
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html#about" class="nav-link">À propos</a></li>
+          <li><a href="index.html#skills" class="nav-link">Compétences</a></li>
+          <li><a href="index.html#experience" class="nav-link">Expérience</a></li>
+          <li><a href="projets.html" class="nav-link">Projets</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="projects-hero">
-        <div class="container">
-            <div class="projects-hero-content">
-                <h1 class="projects-hero-title">Portfolio Complet</h1>
-                <p class="projects-hero-description">
-                    Plus de 15 projets réalisés dans le <strong>développement web</strong>, 
-                    la <strong>recherche & développement</strong> et le <strong>design</strong>. 
-                    De Hermès aux systèmes industriels innovants.
-                </p>
-                <div class="projects-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Projets réalisés</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Clients</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Domaines d'expertise</span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="projects-hero-content">
+          <h1 class="projects-hero-title">Portfolio Complet</h1>
+          <p class="projects-hero-description">
+            Plus de 15 projets réalisés dans le <strong>développement web</strong>, la
+            <strong>recherche & développement</strong> et le <strong>design</strong>. De Hermès aux
+            systèmes industriels innovants.
+          </p>
+          <div class="projects-stats">
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projets réalisés</span>
             </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Domaines d'expertise</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Filters Section -->
     <section class="section projects-page">
-        <div class="container">
-            
-            <!-- Filters -->
-            <div class="projects-filters">
-                <button class="filter-btn active" data-filter="all">
-                    <span class="filter-icon">🎯</span>
-                    Tous les projets
-                </button>
-                <button class="filter-btn" data-filter="web">
-                    <span class="filter-icon">💻</span>
-                    Développement Web
-                </button>
-                <button class="filter-btn" data-filter="rd">
-                    <span class="filter-icon">🔬</span>
-                    R&D & Ingénierie
-                </button>
-                <button class="filter-btn" data-filter="design">
-                    <span class="filter-icon">🎨</span>
-                    Design & Créativité
-                </button>
-                <button class="filter-btn" data-filter="data">
-                    <span class="filter-icon">📊</span>
-                    Data Science & IA
-                </button>
-            </div>
+      <div class="container">
+        <!-- Filters -->
+        <div class="projects-filters">
+          <button class="filter-btn active" data-filter="all">
+            <span class="filter-icon">🎯</span>
+            Tous les projets
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <span class="filter-icon">💻</span>
+            Développement Web
+          </button>
+          <button class="filter-btn" data-filter="rd">
+            <span class="filter-icon">🔬</span>
+            R&D & Ingénierie
+          </button>
+          <button class="filter-btn" data-filter="design">
+            <span class="filter-icon">🎨</span>
+            Design & Créativité
+          </button>
+          <button class="filter-btn" data-filter="data">
+            <span class="filter-icon">📊</span>
+            Data Science & IA
+          </button>
+        </div>
 
-            <!-- Projects Grid -->
-            <div class="projects-grid" id="projects-container">
-
-                <!-- ========================================
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          <!-- ========================================
                      DATA SCIENCE & IA
                      ======================================== -->
 
-                <!-- Project HydroSense: Data Science -->
-                <article class="project-card-horizontal project-featured" data-category="data">
-                    <div class="project-content">
-                        <h3 class="project-title">HydroSense — Prévision des niveaux de nappes phréatiques</h3>
-                        <p class="project-description">
-                            Outil de suivi et de prévision des niveaux piézométriques en France, conçu pour rendre la donnée hydrologique accessible aux acteurs de la gestion de l'eau.
-                        </p>
-                        <ul class="timeline-tasks">
-                            <li>Collecte et traitement de données piézométriques (base ADES) : séries temporelles par station</li>
-                            <li>Modélisation prédictive à horizon 90 jours (Machine Learning, Darts, Prophet)</li>
-                            <li>Classification automatique selon les seuils réglementaires (de « normal » à « crise »)</li>
-                            <li>Pipeline de données et API de prédiction conteneurisée, déployées sur Google Cloud</li>
-                            <li>Tableau de bord interactif et cartographique (Streamlit)</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Darts</span>
-                            <span class="tech-tag">Prophet</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Google Cloud</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Le Wagon Nantes · équipe de 3</span>
-                            <span class="project-year">
-                                <a href="https://hydro-sense.streamlit.app" target="_blank" rel="noopener noreferrer">Démo</a>
-                                ·
-                                <a href="https://github.com/charourou/Projet_Hydrosense" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                · 2026
-                            </span>
-                        </div>
-                    </div>
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-hydrosense.webp" alt="HydroSense — tableau de bord piézométrique" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Data Science • IA</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project HydroSense: Data Science -->
+          <article class="project-card-horizontal project-featured" data-category="data">
+            <div class="project-content">
+              <h3 class="project-title">
+                HydroSense — Prévision des niveaux de nappes phréatiques
+              </h3>
+              <p class="project-description">
+                Outil de suivi et de prévision des niveaux piézométriques en France, conçu pour
+                rendre la donnée hydrologique accessible aux acteurs de la gestion de l'eau.
+              </p>
+              <ul class="timeline-tasks">
+                <li>
+                  Collecte et traitement de données piézométriques (base ADES) : séries temporelles
+                  par station
+                </li>
+                <li>
+                  Modélisation prédictive à horizon 90 jours (Machine Learning, Darts, Prophet)
+                </li>
+                <li>
+                  Classification automatique selon les seuils réglementaires (de « normal » à «
+                  crise »)
+                </li>
+                <li>
+                  Pipeline de données et API de prédiction conteneurisée, déployées sur Google Cloud
+                </li>
+                <li>Tableau de bord interactif et cartographique (Streamlit)</li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Darts</span>
+                <span class="tech-tag">Prophet</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Google Cloud</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Le Wagon Nantes · équipe de 3</span>
+                <span class="project-year">
+                  <a
+                    href="https://hydro-sense.streamlit.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Démo</a
+                  >
+                  ·
+                  <a
+                    href="https://github.com/charourou/Projet_Hydrosense"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  · 2026
+                </span>
+              </div>
+            </div>
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-hydrosense.webp"
+                  alt="HydroSense — tableau de bord piézométrique"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Data Science • IA</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- ========================================
+          <!-- ========================================
                      DÉVELOPPEMENT WEB
                      ======================================== -->
 
-                <!-- Project 1: Hermès E-commerce -->
-                <article class="project-card-horizontal project-featured" data-category="web">
-                    <div class="project-content">
-                        <h3 class="project-title">Refonte E-commerce Hermès</h3>
-                        <p class="project-description">
-                            Participation à la refonte front-end complète des sites e-commerce de la maison Hermès. 
-                            Conception et intégration d'interfaces élégantes, optimisées pour l'expérience client haut de gamme.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Drupal</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Magento</span>
-                            <span class="tech-tag">Akeneo PIM</span>
-                            <span class="tech-tag">Agile</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Hermès (via Capgemini)</span>
-                            <span class="project-year">2016-2017</span>
-                        </div>
-                    </div>
-                
-                    <div class="project-image-slider">
-                        <div class="slider-container">
-                            <div class="slider-track">
-                                <div class="slider-slide">
-                                    <img src="images/project-hermes-1.webp" alt="Hermès E-commerce - Vue 1" onerror="this.style.display='none'">
-                                </div>
-                                <div class="slider-slide">
-                                    <img src="images/project-hermes-2.webp" alt="Hermès E-commerce - Vue 2" onerror="this.style.display='none'">
-                                </div>
-                                <div class="slider-slide">
-                                    <img src="images/project-hermes-3.webp" alt="Hermès E-commerce - Vue 3" onerror="this.style.display='none'">
-                                </div>
-                            </div>
-                            <button class="slider-btn slider-prev" aria-label="Image précédente">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="15 18 9 12 15 6"></polyline>
-                                </svg>
-                            </button>
-                            <button class="slider-btn slider-next" aria-label="Image suivante">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
-                            </button>
-                            <div class="slider-dots">
-                                <span class="slider-dot active" data-slide="0"></span>
-                                <span class="slider-dot" data-slide="1"></span>
-                                <span class="slider-dot" data-slide="2"></span>
-                            </div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">E-commerce • Luxe</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 1: Hermès E-commerce -->
+          <article class="project-card-horizontal project-featured" data-category="web">
+            <div class="project-content">
+              <h3 class="project-title">Refonte E-commerce Hermès</h3>
+              <p class="project-description">
+                Participation à la refonte front-end complète des sites e-commerce de la maison
+                Hermès. Conception et intégration d'interfaces élégantes, optimisées pour
+                l'expérience client haut de gamme.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Drupal</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Magento</span>
+                <span class="tech-tag">Akeneo PIM</span>
+                <span class="tech-tag">Agile</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Hermès (via Capgemini)</span>
+                <span class="project-year">2016-2017</span>
+              </div>
+            </div>
 
-                <!-- Project 2: Site Web Juridique 1 -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-jurisoft.webp" alt="Site web cabinet d'avocats" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Web Design • Justice</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site Web Cabinet d'Avocats</h3>
-                        <p class="project-description">
-                            Conception et développement d'un site vitrine pour un cabinet d'avocats. 
-                            Design moderne et élégant, animations Three.js subtiles, optimisé pour l'accessibilité.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Three.js</span>
-                            <span class="tech-tag">HTML/CSS/JS</span>
-                            <span class="tech-tag">SQL</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Jurisoft Applications</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="project-image-slider">
+              <div class="slider-container">
+                <div class="slider-track">
+                  <div class="slider-slide">
+                    <img
+                      src="images/project-hermes-1.webp"
+                      alt="Hermès E-commerce - Vue 1"
+                      onerror="this.style.display = 'none'"
+                    />
+                  </div>
+                  <div class="slider-slide">
+                    <img
+                      src="images/project-hermes-2.webp"
+                      alt="Hermès E-commerce - Vue 2"
+                      onerror="this.style.display = 'none'"
+                    />
+                  </div>
+                  <div class="slider-slide">
+                    <img
+                      src="images/project-hermes-3.webp"
+                      alt="Hermès E-commerce - Vue 3"
+                      onerror="this.style.display = 'none'"
+                    />
+                  </div>
+                </div>
+                <button class="slider-btn slider-prev" aria-label="Image précédente">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="slider-btn slider-next" aria-label="Image suivante">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <div class="slider-dots">
+                  <span class="slider-dot active" data-slide="0"></span>
+                  <span class="slider-dot" data-slide="1"></span>
+                  <span class="slider-dot" data-slide="2"></span>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">E-commerce • Luxe</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 3: Site Web Juridique 2 -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-jurisoft.webp" alt="Plateforme web avocat spécialisé" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Web Design • Justice</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Plateforme Web Avocat Spécialisé</h3>
-                        <p class="project-description">
-                            Site web pour avocat avec système de prise de rendez-vous en ligne. 
-                            Interface intuitive, back-office personnalisé, animations WebGL pour un rendu premium.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">UX Design</span>
-                            <span class="tech-tag">WebGL</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">After Effects</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Jurisoft Applications</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 2: Site Web Juridique 1 -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-jurisoft.webp"
+                  alt="Site web cabinet d'avocats"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Web Design • Justice</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Site Web Cabinet d'Avocats</h3>
+              <p class="project-description">
+                Conception et développement d'un site vitrine pour un cabinet d'avocats. Design
+                moderne et élégant, animations Three.js subtiles, optimisé pour l'accessibilité.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">HTML/CSS/JS</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Jurisoft Applications</span>
+                <span class="project-year">2024</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 4: Site Web Juridique 3 -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-jurisoft.webp" alt="Site web étude d'avocats" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Web Design • Justice</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site Web Étude d'Avocats</h3>
-                        <p class="project-description">
-                            Plateforme web pour étude regroupant plusieurs avocats. 
-                            Pages individuelles par professionnel, blog juridique intégré, formulaire de contact sécurisé.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Jurisoft Applications</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 3: Site Web Juridique 2 -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-jurisoft.webp"
+                  alt="Plateforme web avocat spécialisé"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Web Design • Justice</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Plateforme Web Avocat Spécialisé</h3>
+              <p class="project-description">
+                Site web pour avocat avec système de prise de rendez-vous en ligne. Interface
+                intuitive, back-office personnalisé, animations WebGL pour un rendu premium.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">UX Design</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">After Effects</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Jurisoft Applications</span>
+                <span class="project-year">2024</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 5: Site Commissaire de Justice 1 -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-jurisoft.webp" alt="Site web commissaire de justice" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Web Design • Justice</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site Web Commissaire de Justice</h3>
-                        <p class="project-description">
-                            Site vitrine pour commissaire de justice. 
-                            Présentation des services, FAQ interactive, design sobre et professionnel adapté au secteur.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">UI/UX</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">Three.js</span>
-                            <span class="tech-tag">Accessibilité</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Jurisoft Applications</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 4: Site Web Juridique 3 -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-jurisoft.webp"
+                  alt="Site web étude d'avocats"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Web Design • Justice</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Site Web Étude d'Avocats</h3>
+              <p class="project-description">
+                Plateforme web pour étude regroupant plusieurs avocats. Pages individuelles par
+                professionnel, blog juridique intégré, formulaire de contact sécurisé.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Jurisoft Applications</span>
+                <span class="project-year">2023</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 6: Site Commissaire de Justice 2 -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-jurisoft.webp" alt="Plateforme web office de commissaire" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Web Design • Justice</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Plateforme Office de Commissaire</h3>
-                        <p class="project-description">
-                            Site complet pour office regroupant plusieurs commissaires de justice. 
-                            Espace client sécurisé, suivi de dossiers, design moderne avec animations subtiles.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Jurisoft Applications</span>
-                            <span class="project-year">2023</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 5: Site Commissaire de Justice 1 -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-jurisoft.webp"
+                  alt="Site web commissaire de justice"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Web Design • Justice</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Site Web Commissaire de Justice</h3>
+              <p class="project-description">
+                Site vitrine pour commissaire de justice. Présentation des services, FAQ
+                interactive, design sobre et professionnel adapté au secteur.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">UI/UX</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">Accessibilité</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Jurisoft Applications</span>
+                <span class="project-year">2024</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 7: E-learning Nantes Université -->
-                <article class="project-card-horizontal" data-category="design">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-elearning.webp" alt="Modules E-learning médecine" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">E-learning • Santé</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Modules E-learning Médecine</h3>
-                        <p class="project-description">
-                            Conception de parcours pédagogiques interactifs pour les formations en médecine et pharmacie. 
-                            Gamification et design UX pour améliorer l'engagement et la rétention d'apprentissage.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Storyline</span>
-                            <span class="tech-tag">Game Design</span>
-                            <span class="tech-tag">UX Design</span>
-                            <span class="tech-tag">MOOC</span>
-                            <span class="tech-tag">Vidéo</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Nantes Université</span>
-                            <span class="project-year">2021-2022</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 6: Site Commissaire de Justice 2 -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-jurisoft.webp"
+                  alt="Plateforme web office de commissaire"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Web Design • Justice</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Plateforme Office de Commissaire</h3>
+              <p class="project-description">
+                Site complet pour office regroupant plusieurs commissaires de justice. Espace client
+                sécurisé, suivi de dossiers, design moderne avec animations subtiles.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Python</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Jurisoft Applications</span>
+                <span class="project-year">2023</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 8: Thalys Mobile (SNCF) -->
-                <article class="project-card-horizontal" data-category="web">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-thalys.webp" alt="Refonte mobile Thalys" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Mobile • Transport</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Refonte Mobile Thalys</h3>
-                        <p class="project-description">
-                            Design UI/UX et prototypage front-end pour la refonte mobile du site Thalys. 
-                            Maquettes interactives centrées sur l'expérience utilisateur mobile-first.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">UI Design</span>
-                            <span class="tech-tag">Mobile-First</span>
-                            <span class="tech-tag">Prototypage</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : SNCF (via Capgemini)</span>
-                            <span class="project-year">2016</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 7: E-learning Nantes Université -->
+          <article class="project-card-horizontal" data-category="design">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-elearning.webp"
+                  alt="Modules E-learning médecine"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">E-learning • Santé</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Modules E-learning Médecine</h3>
+              <p class="project-description">
+                Conception de parcours pédagogiques interactifs pour les formations en médecine et
+                pharmacie. Gamification et design UX pour améliorer l'engagement et la rétention
+                d'apprentissage.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Storyline</span>
+                <span class="tech-tag">Game Design</span>
+                <span class="tech-tag">UX Design</span>
+                <span class="tech-tag">MOOC</span>
+                <span class="tech-tag">Vidéo</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Nantes Université</span>
+                <span class="project-year">2021-2022</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- Project 9: Yann Simon Studio -->
-                <article class="project-card-horizontal" data-category="design">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-studio.webp" alt="Projets artistiques personnels" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">Art • Design</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Yann Simon Studio - Projets Créatifs</h3>
-                        <p class="project-description">
-                            Direction artistique et design pour divers clients indépendants. Identités visuelles, 
-                            sites web sur-mesure, expositions artistiques et résidences créatives internationales.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">WordPress</span>
-                            <span class="tech-tag">Direction Artistique</span>
-                            <span class="tech-tag">Identité Visuelle</span>
-                            <span class="tech-tag">Design Print</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Projets personnels & clients</span>
-                            <span class="project-year">2018-présent</span>
-                        </div>
-                    </div>
-                </article>
+          <!-- Project 8: Thalys Mobile (SNCF) -->
+          <article class="project-card-horizontal" data-category="web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-thalys.webp"
+                  alt="Refonte mobile Thalys"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Mobile • Transport</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Refonte Mobile Thalys</h3>
+              <p class="project-description">
+                Design UI/UX et prototypage front-end pour la refonte mobile du site Thalys.
+                Maquettes interactives centrées sur l'expérience utilisateur mobile-first.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">UI Design</span>
+                <span class="tech-tag">Mobile-First</span>
+                <span class="tech-tag">Prototypage</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : SNCF (via Capgemini)</span>
+                <span class="project-year">2016</span>
+              </div>
+            </div>
+          </article>
 
-                <!-- ========================================
+          <!-- Project 9: Yann Simon Studio -->
+          <article class="project-card-horizontal" data-category="design">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-studio.webp"
+                  alt="Projets artistiques personnels"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">Art • Design</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Yann Simon Studio - Projets Créatifs</h3>
+              <p class="project-description">
+                Direction artistique et design pour divers clients indépendants. Identités
+                visuelles, sites web sur-mesure, expositions artistiques et résidences créatives
+                internationales.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Direction Artistique</span>
+                <span class="tech-tag">Identité Visuelle</span>
+                <span class="tech-tag">Design Print</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Projets personnels & clients</span>
+                <span class="project-year">2018-présent</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================
                      R&D & INGÉNIERIE
                      ======================================== -->
 
-                <!-- Project 10: Système vision drone (R&D) -->
-                <article class="project-card-horizontal" data-category="rd">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-drone.webp" alt="Système de vision pour drone autonome" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">R&D • Vision Informatique</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Système de Vision pour Drone Autonome</h3>
-                        <p class="project-description">
-                            Projet R&D pour la conception d'un système de vision informatique destiné à la navigation 
-                            autonome d'un drone. Instrumentation, programmation embarquée et traitement d'images.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vision Informatique</span>
-                            <span class="tech-tag">Arduino (C)</span>
-                            <span class="tech-tag">Traitement d'Images</span>
-                            <span class="tech-tag">Instrumentation</span>
-                            <span class="tech-tag">Systèmes Embarqués</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Laboratoire Chi Nan (Taïwan)</span>
-                            <span class="project-year">2013</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 11: Banc de tests GPS (Sercel) -->
-                <article class="project-card-horizontal" data-category="rd">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-gps.webp" alt="Banc de tests GPS" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">R&D • Industriel</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Banc de Tests Récepteurs GPS</h3>
-                        <p class="project-description">
-                            Conception complète d'un système de tests pour récepteurs GPS : montage hardware, 
-                            développement software de contrôle et acquisition de données, design d'interface ergonomique (IHM).
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">LabVIEW</span>
-                            <span class="tech-tag">C</span>
-                            <span class="tech-tag">IHM</span>
-                            <span class="tech-tag">Hardware</span>
-                            <span class="tech-tag">Tests & Validation</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Sercel</span>
-                            <span class="project-year">2014</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 12: Système chauffage photovoltaïque (Fives) -->
-                <article class="project-card-horizontal" data-category="rd">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <img src="images/project-thermal.webp" alt="Système de chauffage photovoltaïque" onerror="this.style.display='none'">
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-category">R&D • Thermique</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Étude Système Chauffage Photovoltaïque</h3>
-                        <p class="project-description">
-                            Étude expérimentale d'un système innovant de chauffage par fluide caloporteur. 
-                            Mise en place et tests d'un banc de mesure thermique, instrumentation et acquisition de données.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Métrologie</span>
-                            <span class="tech-tag">Thermique</span>
-                            <span class="tech-tag">Capteurs</span>
-                            <span class="tech-tag">Acquisition de Données</span>
-                            <span class="tech-tag">Tests Mécaniques</span>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-client">Client : Fives</span>
-                            <span class="project-year">2011</span>
-                        </div>
-                    </div>
-                </article>
-
+          <!-- Project 10: Système vision drone (R&D) -->
+          <article class="project-card-horizontal" data-category="rd">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-drone.webp"
+                  alt="Système de vision pour drone autonome"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">R&D • Vision Informatique</span>
+              </div>
             </div>
-
-            <!-- CTA Section -->
-            <div class="projects-bottom-cta">
-                <h2>Un projet en tête ?</h2>
-                <p>Discutons de comment je peux vous aider à le concrétiser</p>
-                <a href="index.html#contact" class="btn btn-primary btn-large">Me contacter</a>
+            <div class="project-content">
+              <h3 class="project-title">Système de Vision pour Drone Autonome</h3>
+              <p class="project-description">
+                Projet R&D pour la conception d'un système de vision informatique destiné à la
+                navigation autonome d'un drone. Instrumentation, programmation embarquée et
+                traitement d'images.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vision Informatique</span>
+                <span class="tech-tag">Arduino (C)</span>
+                <span class="tech-tag">Traitement d'Images</span>
+                <span class="tech-tag">Instrumentation</span>
+                <span class="tech-tag">Systèmes Embarqués</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Laboratoire Chi Nan (Taïwan)</span>
+                <span class="project-year">2013</span>
+              </div>
             </div>
+          </article>
 
+          <!-- Project 11: Banc de tests GPS (Sercel) -->
+          <article class="project-card-horizontal" data-category="rd">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-gps.webp"
+                  alt="Banc de tests GPS"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">R&D • Industriel</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Banc de Tests Récepteurs GPS</h3>
+              <p class="project-description">
+                Conception complète d'un système de tests pour récepteurs GPS : montage hardware,
+                développement software de contrôle et acquisition de données, design d'interface
+                ergonomique (IHM).
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">LabVIEW</span>
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">IHM</span>
+                <span class="tech-tag">Hardware</span>
+                <span class="tech-tag">Tests & Validation</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Sercel</span>
+                <span class="project-year">2014</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 12: Système chauffage photovoltaïque (Fives) -->
+          <article class="project-card-horizontal" data-category="rd">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <img
+                  src="images/project-thermal.webp"
+                  alt="Système de chauffage photovoltaïque"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="project-overlay">
+                <span class="project-category">R&D • Thermique</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Étude Système Chauffage Photovoltaïque</h3>
+              <p class="project-description">
+                Étude expérimentale d'un système innovant de chauffage par fluide caloporteur. Mise
+                en place et tests d'un banc de mesure thermique, instrumentation et acquisition de
+                données.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Métrologie</span>
+                <span class="tech-tag">Thermique</span>
+                <span class="tech-tag">Capteurs</span>
+                <span class="tech-tag">Acquisition de Données</span>
+                <span class="tech-tag">Tests Mécaniques</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-client">Client : Fives</span>
+                <span class="project-year">2011</span>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <!-- CTA Section -->
+        <div class="projects-bottom-cta">
+          <h2>Un projet en tête ?</h2>
+          <p>Discutons de comment je peux vous aider à le concrétiser</p>
+          <a href="index.html#contact" class="btn btn-primary btn-large">Me contacter</a>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2025 Yann Simon. Tous droits réservés.</p>
-                </div>
-                <div class="footer-right">
-                    <a href="https://www.linkedin.com/in/yannsimon92/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>&copy; 2025 Yann Simon. Tous droits réservés.</p>
+          </div>
+          <div class="footer-right">
+            <a
+              href="https://www.linkedin.com/in/yannsimon92/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
+      // Mobile menu toggle
+      const navToggle = document.querySelector('.nav-toggle')
+      const navMenu = document.querySelector('.nav-menu')
+
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active')
+          navToggle.classList.toggle('active')
+        })
+      }
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active')
+          navToggle.classList.remove('active')
+        })
+      })
+
+      // Navbar scroll effect
+      const nav = document.querySelector('.nav')
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('scrolled')
+        } else {
+          nav.classList.remove('scrolled')
         }
+      })
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
+      // Projects filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn')
+      const projectCards = document.querySelectorAll('[data-category]')
 
-        // Navbar scroll effect
-        const nav = document.querySelector('.nav');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('scrolled');
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => btn.classList.remove('active'))
+          // Add active class to clicked button
+          button.classList.add('active')
+
+          const filterValue = button.getAttribute('data-filter')
+
+          projectCards.forEach((card) => {
+            const category = card.getAttribute('data-category')
+
+            if (filterValue === 'all') {
+              card.style.display = 'flex'
+              card.style.animation = 'fadeInUp 0.5s ease'
+            } else if (category === filterValue) {
+              card.style.display = 'flex'
+              card.style.animation = 'fadeInUp 0.5s ease'
             } else {
-                nav.classList.remove('scrolled');
+              card.style.display = 'none'
             }
-        });
+          })
+        })
+      })
 
-        // Projects filter functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('[data-category]');
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            })
+          }
+        })
+      })
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
+      // ============================================
+      // Image Slider Functionality
+      // ============================================
+      class ProjectSlider {
+        constructor(container) {
+          this.container = container
+          this.track = container.querySelector('.slider-track')
+          this.slides = container.querySelectorAll('.slider-slide')
+          this.prevBtn = container.querySelector('.slider-prev')
+          this.nextBtn = container.querySelector('.slider-next')
+          this.dots = container.querySelectorAll('.slider-dot')
 
-                const filterValue = button.getAttribute('data-filter');
+          this.currentIndex = 0
+          this.totalSlides = this.slides.length
 
-                projectCards.forEach(card => {
-                    const category = card.getAttribute('data-category');
-                    
-                    if (filterValue === 'all') {
-                        card.style.display = 'flex';
-                        card.style.animation = 'fadeInUp 0.5s ease';
-                    } else if (category === filterValue) {
-                        card.style.display = 'flex';
-                        card.style.animation = 'fadeInUp 0.5s ease';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
+          // Drag functionality
+          this.isDragging = false
+          this.startPos = 0
+          this.currentTranslate = 0
+          this.prevTranslate = 0
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // ============================================
-        // Image Slider Functionality
-        // ============================================
-        class ProjectSlider {
-            constructor(container) {
-                this.container = container;
-                this.track = container.querySelector('.slider-track');
-                this.slides = container.querySelectorAll('.slider-slide');
-                this.prevBtn = container.querySelector('.slider-prev');
-                this.nextBtn = container.querySelector('.slider-next');
-                this.dots = container.querySelectorAll('.slider-dot');
-                
-                this.currentIndex = 0;
-                this.totalSlides = this.slides.length;
-                
-                // Drag functionality
-                this.isDragging = false;
-                this.startPos = 0;
-                this.currentTranslate = 0;
-                this.prevTranslate = 0;
-                
-                this.init();
-            }
-            
-            init() {
-                // Button click events
-                if (this.prevBtn) {
-                    this.prevBtn.addEventListener('click', () => this.prev());
-                }
-                if (this.nextBtn) {
-                    this.nextBtn.addEventListener('click', () => this.next());
-                }
-                
-                // Dot click events
-                this.dots.forEach((dot, index) => {
-                    dot.addEventListener('click', () => this.goToSlide(index));
-                });
-                
-                // Drag events
-                this.track.addEventListener('mousedown', this.dragStart.bind(this));
-                this.track.addEventListener('touchstart', this.dragStart.bind(this));
-                this.track.addEventListener('mouseup', this.dragEnd.bind(this));
-                this.track.addEventListener('touchend', this.dragEnd.bind(this));
-                this.track.addEventListener('mouseleave', this.dragEnd.bind(this));
-                this.track.addEventListener('mousemove', this.drag.bind(this));
-                this.track.addEventListener('touchmove', this.drag.bind(this));
-                
-                // Prevent image drag
-                this.slides.forEach(slide => {
-                    const img = slide.querySelector('img');
-                    if (img) {
-                        img.addEventListener('dragstart', (e) => e.preventDefault());
-                    }
-                });
-            }
-            
-            updateSlider() {
-                this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
-                
-                // Update dots
-                this.dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === this.currentIndex);
-                });
-            }
-            
-            prev() {
-                this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
-                this.updateSlider();
-            }
-            
-            next() {
-                this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
-                this.updateSlider();
-            }
-            
-            goToSlide(index) {
-                this.currentIndex = index;
-                this.updateSlider();
-            }
-            
-            // Drag functionality
-            dragStart(e) {
-                this.isDragging = true;
-                this.startPos = this.getPositionX(e);
-                this.track.classList.add('dragging');
-            }
-            
-            drag(e) {
-                if (!this.isDragging) return;
-                
-                const currentPosition = this.getPositionX(e);
-                const diff = currentPosition - this.startPos;
-                
-                // Simple threshold to prevent accidental drags
-                if (Math.abs(diff) > 10) {
-                    e.preventDefault();
-                }
-            }
-            
-            dragEnd(e) {
-                if (!this.isDragging) return;
-                
-                this.isDragging = false;
-                const currentPosition = this.getPositionX(e);
-                const diff = currentPosition - this.startPos;
-                
-                // Threshold for slide change (50px)
-                if (diff > 50) {
-                    this.prev();
-                } else if (diff < -50) {
-                    this.next();
-                }
-                
-                this.track.classList.remove('dragging');
-            }
-            
-            getPositionX(e) {
-                return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-            }
+          this.init()
         }
-        
-        // Initialize all sliders on the page
-        document.addEventListener('DOMContentLoaded', () => {
-            const sliderContainers = document.querySelectorAll('.slider-container');
-            sliderContainers.forEach(container => {
-                new ProjectSlider(container);
-            });
-        });
+
+        init() {
+          // Button click events
+          if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => this.prev())
+          }
+          if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => this.next())
+          }
+
+          // Dot click events
+          this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => this.goToSlide(index))
+          })
+
+          // Drag events
+          this.track.addEventListener('mousedown', this.dragStart.bind(this))
+          this.track.addEventListener('touchstart', this.dragStart.bind(this))
+          this.track.addEventListener('mouseup', this.dragEnd.bind(this))
+          this.track.addEventListener('touchend', this.dragEnd.bind(this))
+          this.track.addEventListener('mouseleave', this.dragEnd.bind(this))
+          this.track.addEventListener('mousemove', this.drag.bind(this))
+          this.track.addEventListener('touchmove', this.drag.bind(this))
+
+          // Prevent image drag
+          this.slides.forEach((slide) => {
+            const img = slide.querySelector('img')
+            if (img) {
+              img.addEventListener('dragstart', (e) => e.preventDefault())
+            }
+          })
+        }
+
+        updateSlider() {
+          this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`
+
+          // Update dots
+          this.dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === this.currentIndex)
+          })
+        }
+
+        prev() {
+          this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides
+          this.updateSlider()
+        }
+
+        next() {
+          this.currentIndex = (this.currentIndex + 1) % this.totalSlides
+          this.updateSlider()
+        }
+
+        goToSlide(index) {
+          this.currentIndex = index
+          this.updateSlider()
+        }
+
+        // Drag functionality
+        dragStart(e) {
+          this.isDragging = true
+          this.startPos = this.getPositionX(e)
+          this.track.classList.add('dragging')
+        }
+
+        drag(e) {
+          if (!this.isDragging) return
+
+          const currentPosition = this.getPositionX(e)
+          const diff = currentPosition - this.startPos
+
+          // Simple threshold to prevent accidental drags
+          if (Math.abs(diff) > 10) {
+            e.preventDefault()
+          }
+        }
+
+        dragEnd(e) {
+          if (!this.isDragging) return
+
+          this.isDragging = false
+          const currentPosition = this.getPositionX(e)
+          const diff = currentPosition - this.startPos
+
+          // Threshold for slide change (50px)
+          if (diff > 50) {
+            this.prev()
+          } else if (diff < -50) {
+            this.next()
+          }
+
+          this.track.classList.remove('dragging')
+        }
+
+        getPositionX(e) {
+          return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX
+        }
+      }
+
+      // Initialize all sliders on the page
+      document.addEventListener('DOMContentLoaded', () => {
+        const sliderContainers = document.querySelectorAll('.slider-container')
+        sliderContainers.forEach((container) => {
+          new ProjectSlider(container)
+        })
+      })
     </script>
-</body>
+  </body>
 </html>

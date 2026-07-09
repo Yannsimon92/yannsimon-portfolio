@@ -4,7 +4,7 @@
    ============================================ */
 
 /* Import des modules CSS */
-@import url('variables.css');   /* Design system (couleurs, spacing, etc.) */
-@import url('base.css');         /* Reset, typography, layout de base */
-@import url('components.css');   /* Composants réutilisables */
-@import url('pages.css');        /* Styles spécifiques aux pages */
+@import url('variables.css'); /* Design system (couleurs, spacing, etc.) */
+@import url('base.css'); /* Reset, typography, layout de base */
+@import url('components.css'); /* Composants réutilisables */
+@import url('pages.css'); /* Styles spécifiques aux pages */
