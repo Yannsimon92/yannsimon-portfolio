@@ -20,9 +20,20 @@ export default function Nav() {
 
   const anchorLink = (id: string, label: string) =>
     isHome ? (
-      <a href={`#${id}`} className="nav-link" onClick={e => { e.preventDefault(); scrollTo(id) }}>{label}</a>
+      <a
+        href={`#${id}`}
+        className="nav-link"
+        onClick={(e) => {
+          e.preventDefault()
+          scrollTo(id)
+        }}
+      >
+        {label}
+      </a>
     ) : (
-      <Link to={`/#${id}`} className="nav-link">{label}</Link>
+      <Link to={`/#${id}`} className="nav-link">
+        {label}
+      </Link>
     )
 
   return (
@@ -36,16 +47,20 @@ export default function Nav() {
           <li>{anchorLink('skills', 'Compétences')}</li>
           <li>{anchorLink('experience', 'Expérience')}</li>
           <li>
-            <Link to="/projets" className="nav-link" onClick={() => setMenuOpen(false)}>Projets</Link>
+            <Link to="/projets" className="nav-link" onClick={() => setMenuOpen(false)}>
+              Projets
+            </Link>
           </li>
           <li>{anchorLink('contact', 'Contact')}</li>
         </ul>
         <button
           className={`nav-toggle${menuOpen ? ' active' : ''}`}
           aria-label="Toggle navigation"
-          onClick={() => setMenuOpen(o => !o)}
+          onClick={() => setMenuOpen((o) => !o)}
         >
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </nav>

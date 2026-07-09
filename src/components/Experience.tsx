@@ -4,7 +4,6 @@ export default function Experience() {
       <div className="container">
         <h2 className="section-title">Parcours professionnel</h2>
         <div className="timeline">
-
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
@@ -12,17 +11,26 @@ export default function Experience() {
               <h3 className="timeline-title">Formation Data Science & IA</h3>
               <h4 className="timeline-company">Le Wagon · Nantes</h4>
               <p className="timeline-description">
-                Titre RNCP niveau 6 « Concepteur développeur en intelligence artificielle et analyse big data ».
-                Projet final : HydroSense — prévision des niveaux de nappes phréatiques (ML, déploiement cloud, Streamlit).
+                Titre RNCP niveau 6 « Concepteur développeur en intelligence artificielle et analyse
+                big data ». Projet final : HydroSense — prévision des niveaux de nappes phréatiques
+                (ML, déploiement cloud, Streamlit).
               </p>
               <ul className="timeline-tasks">
                 <li>Machine Learning & Deep Learning (Scikit-Learn, TensorFlow)</li>
                 <li>Séries temporelles (Darts, Prophet)</li>
-                <li>Déploiement et mise en production de modèles (FastAPI, Docker, Google Cloud)</li>
+                <li>
+                  Déploiement et mise en production de modèles (FastAPI, Docker, Google Cloud)
+                </li>
                 <li>Python avancé : Pandas, NumPy, visualisation de données</li>
               </ul>
               <div className="timeline-tags">
-                {['Python', 'Machine Learning', 'Deep Learning', 'Google Cloud', 'Docker'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Python', 'Machine Learning', 'Deep Learning', 'Google Cloud', 'Docker'].map(
+                  (t) => (
+                    <span key={t} className="tag">
+                      {t}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
           </div>
@@ -34,10 +42,15 @@ export default function Experience() {
               <h3 className="timeline-title">Consultant Indépendant</h3>
               <h4 className="timeline-company">Yann Simon Studio</h4>
               <p className="timeline-description">
-                Conseil et développement web pour clients indépendants. Conception UI/UX, intégration technique et direction de projet.
+                Conseil et développement web pour clients indépendants. Conception UI/UX,
+                intégration technique et direction de projet.
               </p>
               <div className="timeline-tags">
-                {['Conseil', 'UI/UX Design', 'Développement Web', 'Freelance'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Conseil', 'UI/UX Design', 'Développement Web', 'Freelance'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -49,17 +62,24 @@ export default function Experience() {
               <h3 className="timeline-title">Designer Créatif & Artiste Visuel Indépendant</h3>
               <h4 className="timeline-company">Yann Simon Studio</h4>
               <p className="timeline-description">
-                Activité indépendante mêlant développement de sites web sur-mesure, design graphique,
-                direction artistique et pratique artistique personnelle (expositions et tatouages).
+                Activité indépendante mêlant développement de sites web sur-mesure, design
+                graphique, direction artistique et pratique artistique personnelle (expositions et
+                tatouages).
               </p>
               <ul className="timeline-tasks">
                 <li>Conception UI/UX pour interfaces digitales et supports print</li>
                 <li>Développement et intégration de solutions web complètes (WordPress)</li>
                 <li>Création d'identités visuelles et supports de communication</li>
-                <li>Résidences créatives à l'international (Taïwan, Allemagne, Suisse, Portugal)</li>
+                <li>
+                  Résidences créatives à l'international (Taïwan, Allemagne, Suisse, Portugal)
+                </li>
               </ul>
               <div className="timeline-tags">
-                {['UI/UX Design', 'WordPress', 'Direction Artistique', 'Freelance'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['UI/UX Design', 'WordPress', 'Direction Artistique', 'Freelance'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -82,7 +102,11 @@ export default function Experience() {
                 <li>Animations interactives en WebGL (Three.js)</li>
               </ul>
               <div className="timeline-tags">
-                {['Figma', 'JavaScript', 'Three.js', 'SQL', 'Python'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Figma', 'JavaScript', 'Three.js', 'SQL', 'Python'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -104,7 +128,11 @@ export default function Experience() {
                 <li>Collaboration avec équipes pédagogiques</li>
               </ul>
               <div className="timeline-tags">
-                {['E-learning', 'Storyline', 'Game Design', 'MOOC'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['E-learning', 'Storyline', 'Game Design', 'MOOC'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -116,7 +144,8 @@ export default function Experience() {
               <h3 className="timeline-title">Développeur Frontend - Hermès</h3>
               <h4 className="timeline-company">Capgemini · Nantes</h4>
               <p className="timeline-description">
-                Refonte front-end des sites e-commerce Hermès, développement technique et design centré utilisateur.
+                Refonte front-end des sites e-commerce Hermès, développement technique et design
+                centré utilisateur.
               </p>
               <ul className="timeline-tasks">
                 <li>Conception, validation et intégration des maquettes UI</li>
@@ -126,7 +155,11 @@ export default function Experience() {
               </ul>
               <div className="timeline-tags">
                 <span className="tag tag-featured">Hermès</span>
-                {['Drupal', 'Magento', 'Agile'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Drupal', 'Magento', 'Agile'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -137,7 +170,9 @@ export default function Experience() {
               <div className="timeline-date">Mai 2016 (1 mois)</div>
               <h3 className="timeline-title">UI Designer - SNCF</h3>
               <h4 className="timeline-company">Capgemini · Nantes</h4>
-              <p className="timeline-description">Design UI/UX et prototypage front-end pour la refonte mobile du site Thalys.</p>
+              <p className="timeline-description">
+                Design UI/UX et prototypage front-end pour la refonte mobile du site Thalys.
+              </p>
               <ul className="timeline-tasks">
                 <li>Création de maquettes interactives HTML/CSS centrées utilisateur</li>
               </ul>
@@ -156,10 +191,16 @@ export default function Experience() {
               <div className="timeline-compact-list">
                 {[
                   { client: 'Humanis', desc: 'Intégrateur Web (8 mois) - Drupal, Bootstrap' },
-                  { client: 'CCI Paris', desc: 'Développeur Front-end (6 mois) - Drupal, Material Design' },
+                  {
+                    client: 'CCI Paris',
+                    desc: 'Développeur Front-end (6 mois) - Drupal, Material Design',
+                  },
                   { client: 'Sodexo', desc: 'Développeur Front-end (1 mois) - Jahia, Bootstrap' },
                   { client: 'Angers Métropole', desc: 'Développeur Web (2 mois) - Drupal' },
-                  { client: 'République Française', desc: 'Développeur Web (2 mois) - PHP/Drupal, MySQL' },
+                  {
+                    client: 'République Française',
+                    desc: 'Développeur Web (2 mois) - PHP/Drupal, MySQL',
+                  },
                 ].map(({ client, desc }) => (
                   <div key={client} className="compact-item">
                     <strong>{client}</strong> - {desc}
@@ -176,18 +217,27 @@ export default function Experience() {
               <h3 className="timeline-title">Ingénieur Informatique Industrielle</h3>
               <h4 className="timeline-company">Sercel</h4>
               <p className="timeline-description">
-                Conception et développement d'un banc de tests pour récepteurs GPS (hardware, software, IHM).
+                Conception et développement d'un banc de tests pour récepteurs GPS (hardware,
+                software, IHM).
               </p>
               <ul className="timeline-tasks">
                 <li>Analyse et spécification des besoins techniques</li>
                 <li>Montage et configuration du banc de test matériel</li>
-                <li>Développement des logiciels de contrôle et d'acquisition en Langage C et LabVIEW</li>
+                <li>
+                  Développement des logiciels de contrôle et d'acquisition en Langage C et LabVIEW
+                </li>
                 <li>Réalisation des tests fonctionnels et validation des performances</li>
-                <li>Conception et design ergonomique de l'interface homme-machine (IHM) sous LabVIEW</li>
+                <li>
+                  Conception et design ergonomique de l'interface homme-machine (IHM) sous LabVIEW
+                </li>
                 <li>Formation des utilisateurs finaux et support technique</li>
               </ul>
               <div className="timeline-tags">
-                {['LabVIEW', 'C', 'IHM'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['LabVIEW', 'C', 'IHM'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -199,15 +249,22 @@ export default function Experience() {
               <h3 className="timeline-title">Assistant Ingénieur R&D</h3>
               <h4 className="timeline-company">Laboratoire Chi Nan · Taïwan</h4>
               <p className="timeline-description">
-                Projet R&D innovant : conception d'un système de vision informatique pour la navigation autonome d'un drone.
+                Projet R&D innovant : conception d'un système de vision informatique pour la
+                navigation autonome d'un drone.
               </p>
               <ul className="timeline-tasks">
                 <li>Conception et développement du système de vision embarqué</li>
                 <li>Programmation en langage C sur microcontrôleur Arduino</li>
-                <li>Analyse et traitement numérique des images pour la reconnaissance et la navigation</li>
+                <li>
+                  Analyse et traitement numérique des images pour la reconnaissance et la navigation
+                </li>
               </ul>
               <div className="timeline-tags">
-                {['Vision Informatique', 'Arduino (C)', 'R&D'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Vision Informatique', 'Arduino (C)', 'R&D'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -219,14 +276,18 @@ export default function Experience() {
               <h3 className="timeline-title">Technicien Recherche & Développement</h3>
               <h4 className="timeline-company">Fives · Nantes</h4>
               <p className="timeline-description">
-                Étude expérimentale d'un système de chauffage photovoltaïque. Mise en place et tests d'un banc de mesure thermique.
+                Étude expérimentale d'un système de chauffage photovoltaïque. Mise en place et tests
+                d'un banc de mesure thermique.
               </p>
               <div className="timeline-tags">
-                {['Métrologie', 'Thermique', 'Tests Mécaniques'].map(t => <span key={t} className="tag">{t}</span>)}
+                {['Métrologie', 'Thermique', 'Tests Mécaniques'].map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

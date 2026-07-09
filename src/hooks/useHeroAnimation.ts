@@ -22,20 +22,28 @@ export function useHeroAnimation(canvasRef: RefObject<HTMLCanvasElement>) {
     pl2.position.set(-10, -10, -10)
     scene.add(pl2)
 
-    const mat = new THREE.MeshPhongMaterial({ color: 0x0a0f1e, shininess: 100, transparent: true, opacity: 0.8 })
+    const mat = new THREE.MeshPhongMaterial({
+      color: 0x0a0f1e,
+      shininess: 100,
+      transparent: true,
+      opacity: 0.8,
+    })
     const meshes: THREE.Mesh[] = []
 
     const torus = new THREE.Mesh(new THREE.TorusGeometry(1.5, 0.4, 16, 32), mat)
     torus.position.set(-2, 1, 0)
-    meshes.push(torus); scene.add(torus)
+    meshes.push(torus)
+    scene.add(torus)
 
     const ico = new THREE.Mesh(new THREE.IcosahedronGeometry(1, 0), mat)
     ico.position.set(2, -1, -2)
-    meshes.push(ico); scene.add(ico)
+    meshes.push(ico)
+    scene.add(ico)
 
     const octa = new THREE.Mesh(new THREE.OctahedronGeometry(0.8, 0), mat)
     octa.position.set(0, -2, -1)
-    meshes.push(octa); scene.add(octa)
+    meshes.push(octa)
+    scene.add(octa)
 
     const pGeo = new THREE.BufferGeometry()
     const pos = new Float32Array(50 * 3)
@@ -45,7 +53,16 @@ export function useHeroAnimation(canvasRef: RefObject<HTMLCanvasElement>) {
       pos[i * 3 + 2] = (Math.random() - 0.5) * 10
     }
     pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3))
-    const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({ color: 0x2563eb, size: 0.03, sizeAttenuation: true, transparent: true, opacity: 0.6 }))
+    const particles = new THREE.Points(
+      pGeo,
+      new THREE.PointsMaterial({
+        color: 0x2563eb,
+        size: 0.03,
+        sizeAttenuation: true,
+        transparent: true,
+        opacity: 0.6,
+      }),
+    )
     scene.add(particles)
 
     const mouse = { x: 0, y: 0 }
@@ -61,7 +78,10 @@ export function useHeroAnimation(canvasRef: RefObject<HTMLCanvasElement>) {
       renderer.setSize(window.innerWidth, window.innerHeight)
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     }
-    const onVisibility = () => { if (document.hidden) clock.stop(); else clock.start() }
+    const onVisibility = () => {
+      if (document.hidden) clock.stop()
+      else clock.start()
+    }
 
     window.addEventListener('mousemove', onMouseMove)
     window.addEventListener('resize', onResize)

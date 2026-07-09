@@ -1,14 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Projets from './pages/Projets'
+import { BrowserRouter } from 'react-router-dom'
+import AppRoutes from './AppRoutes'
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projets" element={<Projets />} />
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
   )
 }
