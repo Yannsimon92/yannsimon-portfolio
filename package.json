@@ -24,8 +24,11 @@
     "three": "^0.164.1"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,mjs}": [
+    "*.{ts,tsx}": [
       "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,mjs}": [
       "prettier --write"
     ],
     "*.{json,md,html,css}": [
