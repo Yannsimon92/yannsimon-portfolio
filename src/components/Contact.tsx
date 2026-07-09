@@ -85,8 +85,9 @@ export default function Contact() {
           <div className="contact-cta">
             <p className="contact-cta-text">
               Je suis ouvert aux opportunités de collaboration, freelance ou CDI, dans les domaines
-              de <strong>la data science & IA</strong>, du{' '}
-              <strong>développement web créatif</strong> et du <strong>design UX/UI</strong>.
+              de <strong>la data science & IA</strong>, de <strong>l'ingénierie R&D</strong>, du{' '}
+              <strong>développement web créatif</strong> et du <strong>design UX/UI</strong> — à
+              Nantes, dès septembre 2026.
             </p>
             <a
               href="https://www.linkedin.com/in/yannsimon92/"
