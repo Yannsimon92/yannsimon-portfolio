@@ -1,10 +1,8 @@
-import { useRef } from 'react'
-import { useHeroAnimation } from '../hooks/useHeroAnimation'
+import { lazy, Suspense } from 'react'
+
+const HeroCanvas = lazy(() => import('./HeroCanvas'))
 
 export default function Hero() {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  useHeroAnimation(canvasRef)
-
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -50,7 +48,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <canvas className="hero-canvas" ref={canvasRef}></canvas>
+      <Suspense fallback={null}>
+        <HeroCanvas />
+      </Suspense>
     </section>
   )
 }

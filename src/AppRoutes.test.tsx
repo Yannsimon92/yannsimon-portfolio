@@ -12,14 +12,14 @@ function renderAt(path: string) {
 }
 
 describe('AppRoutes', () => {
-  it('rend la page Home sur la route /', () => {
+  it('rend la page Home sur la route /', async () => {
     renderAt('/')
-    expect(screen.getByRole('button', { name: /toggle navigation/i })).toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: /toggle navigation/i })).toBeInTheDocument()
   })
 
-  it('rend la page Projets sur la route /projets', () => {
+  it('rend la page Projets sur la route /projets', async () => {
     renderAt('/projets')
-    expect(screen.getByRole('button', { name: /toggle navigation/i })).toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: /toggle navigation/i })).toBeInTheDocument()
   })
 
   it('affiche une page vide sur une route inconnue', () => {
