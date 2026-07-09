@@ -58,7 +58,7 @@ export default function Experience() {
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
-              <div className="timeline-date">Mai 2018 - Présent (7 ans)</div>
+              <div className="timeline-date">Mai 2018 - Sept. 2021 (3 ans 4 mois)</div>
               <h3 className="timeline-title">Designer Créatif & Artiste Visuel Indépendant</h3>
               <h4 className="timeline-company">Yann Simon Studio</h4>
               <p className="timeline-description">
