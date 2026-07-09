@@ -22,8 +22,15 @@ describe('AppRoutes', () => {
     expect(await screen.findByRole('button', { name: /toggle navigation/i })).toBeInTheDocument()
   })
 
-  it('affiche une page vide sur une route inconnue', () => {
-    const { container } = renderAt('/inconnue')
-    expect(container).toBeInTheDocument()
+  it('rend la page 404 sur une route inconnue', () => {
+    renderAt('/inconnue')
+    expect(screen.getByText('404')).toBeInTheDocument()
+    expect(screen.getByText('Page introuvable')).toBeInTheDocument()
+    expect(screen.getByText("Retour à l'accueil")).toBeInTheDocument()
+  })
+
+  it('rend la page 404 sur une route profonde inconnue', () => {
+    renderAt('/projets/inconnue/details')
+    expect(screen.getByText('404')).toBeInTheDocument()
   })
 })
