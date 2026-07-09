@@ -7,7 +7,8 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import prettier from 'eslint-config-prettier'
 
 export default tseslint.config(
-  { ignores: ['dist', '.vite', 'node_modules', 'old', 'public', '*.js'] },
+  // hero-animation.js : script legacy pre-migration React, non linte volontairement (THREE global via CDN, code non maintenu)
+  { ignores: ['dist', '.vite', 'node_modules', 'old', 'public', 'hero-animation.js'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -32,6 +33,15 @@ export default tseslint.config(
       'react/react-in-jsx-scope': 'off',
       'react/no-unescaped-entities': 'off',
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    },
+  },
+  {
+    extends: [js.configs.recommended],
+    files: ['**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: { ...globals.browser, ...globals.node },
     },
   },
   prettier,
